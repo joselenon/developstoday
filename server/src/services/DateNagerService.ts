@@ -80,8 +80,6 @@ class DateNagerService {
       const countries = await AxiosService<{ error: boolean; msg: string; data: ICountryPopulation[] }>({
         url: 'https://countriesnow.space/api/v0.1/countries/population',
       });
-
-      console.log(countries);
     } catch (err) {
       console.log('Failed to get');
     }

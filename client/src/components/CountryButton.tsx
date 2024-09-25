@@ -25,6 +25,7 @@ const CountryButtonContainer = styled.div`
 
   button:hover {
     cursor: pointer;
+    background-color: var(--color-grey);
   }
 
   span {

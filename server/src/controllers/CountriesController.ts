@@ -33,7 +33,6 @@ class CountriesController {
       if (!countryCode) throw new InvalidPayloadError();
 
       const countryPopulation = await DateNagerService.getCountryPopulationHistory(countryCode);
-      console.log(countryPopulation);
 
       res.status(200).json(responseBody({ success: true, message: 'GET_MSG', data: countryPopulation }));
     } catch (err) {
